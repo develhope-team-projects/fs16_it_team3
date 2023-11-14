@@ -1,0 +1,19 @@
+.nav-menu{
+   
+   align-items: center;
+   list-style: none;
+   gap: 50px;
+   color: grey; 
+   font-size: 20px;
+   font-weight: 500;
+   background-color: cyan;
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
