@@ -1,124 +1,137 @@
 @import url(./root.css);
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .box {
-    width: 140px;
-    height: auto;
-    float: left;
-    transition: .5s linear;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    padding: 15px;
-    text-align: center;
-    margin: 0 5px;
-    background: transparent;
-    text-transform: uppercase;
-    font-weight: 900;
+  width: 140px;
+  height: auto;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .box:before {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    height: 4px;
-    width: 100%;
-    border-bottom: 4px solid transparent;
-    border-left: 4px solid transparent;
-    box-sizing: border-box;
-    transform: translateX(100%);
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
 }
 
 .box:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-top: 4px solid transparent;
-    border-right: 4px solid transparent;
-    box-sizing: border-box;
-    transform: translateX(-100%);
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
 }
 
 .box:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .box:hover:before {
-    border-color: #262626;
-    height: 100%;
-    transform: translateX(0);
-    transition: .3s transform linear, .3s height linear .3s;
+  border-color: #ffffff;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
 }
 
 .box:hover:after {
-    border-color: #262626;
-    height: 100%;
-    transform: translateX(0);
-    transition: .3s transform linear, .3s height linear .5s;
+  border-color: #ffffff;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
 }
 
 .CustomButton {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    background: transparent;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: larger;
 }
 
 .input {
-    border: 2px solid transparent;
-    width: 15em;
-    height: 2.5em;
-    padding-left: 0.8em;
-    outline: none;
-    overflow: hidden;
-    background-color: #F3F3F3;
-    border-radius: 10px;
-    transition: all 0.5s;
+  border: 2px solid transparent;
+  width: 15em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  transition: all 0.5s;
 }
 
 .input:hover,
 .input:focus {
-    border: 2px solid var(--clr-red);
-    box-shadow: 0px 0px 0px 7px rgb(219,2,55,20%);
-    background-color: white;
+  border: 2px solid var(--clr-red);
+  box-shadow: 0px 0px 0px 7px rgb(219, 2, 55, 20%);
+  background-color: white;
 }
 
 
 
 .CartBtn {
-    background-color: #ffffff00;
-    color: #fff;
-    width: 8.5em;
-    height: 2.9em;
-    border: var(--clr-red) 0.2em solid;
-    border-radius: 11px;
-    text-align: right;
-    transition: all 0.6s ease;
-    color: #262626;
-  }
-  
-  .CartBtn:hover {
-    background-color: #db0237;
-    cursor: pointer;
-  }
-  
-  .CartBtn svg {
-    width: 1.6em;
-    margin: -1.8em 0.4em 1em;
-    position: absolute;
-    display: flex;
-    transition: all 0.6s ease;
-  }
-  
-  .CartBtn:hover svg {
-    transform: translateX(5px);
-  }
-  
-  .CartBtnText {
-    margin: 0 1.5em
-  }
+  background-color: #ffffff00;
+  color: #000000;
+  width: 9.5em;
+  height: 3.9em;
+  border: var(--clr-white) 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+  color: #ffffff;
+}
+
+.CartBtn:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.CartBtn svg {
+  width: 2.6em;
+  margin: -1.8em 0.4em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.CartBtn:hover svg {
+  transform: translateX(5px);
+}
+
+.CartBtn:hover svg path {
+  stroke: #000000;
+  transition: all 0.6s ease;
+}
+
+.CartBtnText {
+  margin: 0 1.5em
+}
