@@ -89,24 +89,24 @@
 }
 
 
-
 .CartBtn {
     background-color: #ffffff00;
     color: #fff;
     width: 8.5em;
     height: 2.9em;
-    border: var(--clr-red) 0.2em solid;
+    border: var(--clr-black) 0.2em solid;
     border-radius: 11px;
     text-align: right;
     transition: all 0.6s ease;
     color: #262626;
   }
-  
+
   .CartBtn:hover {
-    background-color: #db0237;
+    background-color: #000000;
+    color: white;
     cursor: pointer;
   }
-  
+
   .CartBtn svg {
     width: 1.6em;
     margin: -1.8em 0.4em 1em;
@@ -114,11 +114,16 @@
     display: flex;
     transition: all 0.6s ease;
   }
-  
+
   .CartBtn:hover svg {
     transform: translateX(5px);
   }
-  
+
+  .CartBtn:hover svg path {
+    stroke: #ffffff;
+    transition: all 0.6s ease;
+}
+
   .CartBtnText {
     margin: 0 1.5em
   }
