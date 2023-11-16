@@ -8,6 +8,7 @@ footer{
     justify-content: space-between;
     padding: 10px;
     border-bottom:2px solid white ;
+    border-top:3px solid black ;
 }
 
 .aiuto-footer h3 {

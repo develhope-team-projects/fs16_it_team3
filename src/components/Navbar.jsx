@@ -7,7 +7,7 @@ import UserLogo from "../assets/user.svg"
 import "../style/Navbar.css";
 
 
-const Navbar = () => {
+export const Navbar = () => {
   const navigate = useNavigate();
 
   const handleClickNav = (page) => {
@@ -37,5 +37,3 @@ const Navbar = () => {
     </div>
   );
 };
-
-export default Navbar;
