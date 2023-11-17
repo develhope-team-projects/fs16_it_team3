@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* main {
-    background-image: url(../assets/sfondo.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+main {
+    background-color: white;
+}

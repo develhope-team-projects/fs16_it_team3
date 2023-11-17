@@ -17,7 +17,7 @@ export const CaroselloNotizie = () => {
   return (
     <>
     <h2 style={{textAlign:"center"}}>Ultime Notizie</h2>
-      <Carousel>
+      <Carousel data-bs-theme="dark" style={{marginBottom:"100px"}}>
         <Carousel.Item interval={3000}>
           <div
             style={{
@@ -51,8 +51,7 @@ export const CaroselloNotizie = () => {
               Esplora l'eleganza senza confini della nuova collezione Versace
               2023. Dalle stampe iconiche ai colori vivaci, questa collezione
               fonde creatività e stile, offrendo capi unici che trasformano ogni
-              indumento in un'opera d'arte indossabile. Scopri la moda che
-              celebra l'individualità e ridefinisce gli standard di eleganza.
+              indumento in un'opera d'arte indossabile.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -84,15 +83,12 @@ export const CaroselloNotizie = () => {
             />
           </div>
           <Carousel.Caption>
-            <h3 style={{ color: "black" }}>
-              Tendenze Innovatrici nel Mondo della Moda
-            </h3>
+            <h3 style={{ color: "black" }}>Tendenze Innovatrici nel Mondo della Moda</h3>
             <p style={{ color: "black" }}>
               Immergiti nel futuro della moda. Da tagli audaci a materiali
               futuristici, esplora le tendenze che stanno ridefinendo il mondo
               del design. Questa selezione mette in evidenza l'innovazione nella
-              moda, dalla sostenibilità all'espressione artistica, offrendoti
-              uno sguardo su capi straordinari e all'avanguardia.
+              moda.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
