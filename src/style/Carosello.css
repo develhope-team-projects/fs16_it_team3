@@ -1,0 +1,7 @@
+.caroselloCard{
+    transition: all .2s ease;
+}
+
+.caroselloCard:hover {
+    transform: translateY(-10px);
+}

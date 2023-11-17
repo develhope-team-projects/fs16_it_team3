@@ -97,7 +97,7 @@
 
 
 
-.CartBtn {
+.CartButton {
   background-color: #ffffff00;
   color: #000000;
   width: 9.5em;
@@ -109,29 +109,29 @@
   color: #ffffff;
 }
 
-.CartBtn:hover {
+.CartButton:hover {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
-.CartBtn svg {
+.CartButton svg {
   width: 2.6em;
-  margin: -1.8em 0.4em 1em;
+  margin: -1.3em 0.4em 1em;
   position: absolute;
   display: flex;
   transition: all 0.6s ease;
 }
 
-.CartBtn:hover svg {
+.CartButton:hover svg {
   transform: translateX(5px);
 }
 
-.CartBtn:hover svg path {
+.CartButton:hover svg path {
   stroke: #000000;
   transition: all 0.6s ease;
 }
 
-.CartBtnText {
+.CartButtonText {
   margin: 0 1.5em
 }

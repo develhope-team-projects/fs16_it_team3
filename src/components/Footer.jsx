@@ -18,7 +18,7 @@ export function Footer() {
    
     return(
         <footer>
-        <div className="container-footer">
+        <div id="container-footer">
         <div className="aiuto-footer">
             <h3>Aiuto e Contatti</h3>
             <a href="">Domande frequenti</a>

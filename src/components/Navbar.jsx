@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { CustomButton } from "../components/CustomButton";
 import { CartBtn } from "../components/CartBtn";
 import Logo from "../assets/Logo3.png";
-import UserLogo from "../assets/user.svg"
-import "../style/Navbar.css";
+import "../style/Navbar.css"
 
 
 export const Navbar = () => {
@@ -15,8 +14,8 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
-      <div className="prova">
+    <div className="navbarComponent">
+      <div className="navbarwrapper">
       <div>
         <a href="/">
           <img className="logoNav" src={Logo} alt="Logo" />
