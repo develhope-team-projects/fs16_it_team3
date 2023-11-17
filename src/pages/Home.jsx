@@ -1,4 +1,5 @@
-import { Carosello } from "../components/Carosello"
+import { CaroselloNotizie } from "../components/CaroselloNotizie"
+import { CaroselloProdotti } from "../components/CaroselloProdotti"
 import "../style/Home.css"
 
 export function Home() {
@@ -19,14 +20,13 @@ export function Home() {
             <h1>Ciao</h1>
             <h1>Ciao</h1>
             <h1>Ciao</h1>
-            <Carosello />
+            <CaroselloProdotti />
             <h1>Ciao</h1>
             <h1>Ciao</h1>
             <h1>Ciao</h1>
             <h1>Ciao</h1>
             <h1>Ciao</h1>
-            <h1>Ciao</h1>
-            <Carosello />
+            <CaroselloNotizie />
             <h1>Ciao</h1>
             <h1>Ciao</h1>
         </main>

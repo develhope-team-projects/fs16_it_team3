@@ -3,11 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/Carosello.css"
 import Logo from "../assets/Logo3.png";
 
-export const Carosello = () => {
+export const CaroselloProdotti = () => {
   return (
     <>
-      <Carousel>
-        <Carousel.Item interval={2000}>
+      <Carousel data-bs-theme="dark">
+        <Carousel.Item interval={3000}>
           <div
             style={{
               display: "flex",
@@ -26,9 +26,6 @@ export const Carosello = () => {
             <a href="www.ciao.com" className="caroselloCard">
               <img src={Logo} style={{ width: "256px" }} />
             </a>
-            <a href="www.ciao.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
-            </a>
           </div>
           <Carousel.Caption>
             <h3 style={{ color: "black" }}>Prodotti in Sconto</h3>
@@ -38,7 +35,7 @@ export const Carosello = () => {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={2000}>
+        <Carousel.Item interval={3000}>
           <div
             style={{
               display: "flex",
@@ -53,9 +50,6 @@ export const Carosello = () => {
               <img src={Logo} style={{ width: "256px" }} />
             </a>
             <a href="www.instagram.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
-            </a>
-            <a href="www.ciao.com" className="caroselloCard">
               <img src={Logo} style={{ width: "256px" }} />
             </a>
             <a href="www.ciao.com" className="caroselloCard">
@@ -70,7 +64,7 @@ export const Carosello = () => {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={2000}>
+        <Carousel.Item interval={3000}>
           <div
             style={{
               display: "flex",
@@ -85,9 +79,6 @@ export const Carosello = () => {
               <img src={Logo} style={{ width: "256px" }} />
             </a>
             <a href="www.instagram.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
-            </a>
-            <a href="www.ciao.com" className="caroselloCard">
               <img src={Logo} style={{ width: "256px" }} />
             </a>
             <a href="www.ciao.com" className="caroselloCard">
