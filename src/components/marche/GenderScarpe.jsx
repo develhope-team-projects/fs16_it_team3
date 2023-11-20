@@ -1,5 +1,5 @@
 
-import "./GenderScarpe.css";
+import "./Marche.css";
 import Button from '../Button'
 
 const GenderScarpe = ({ handleClick }) => {

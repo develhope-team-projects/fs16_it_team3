@@ -6,7 +6,6 @@ import products from "../db/data";
 
 import Sidebar from "../Sidebar/Sidebar";
 import Card from "../Card";
-import "./Scarpe.css"
 import GenderScarpe from "../marche/GenderScarpe";
 
 function Scarpe() {

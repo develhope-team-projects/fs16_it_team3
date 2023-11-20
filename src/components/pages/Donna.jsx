@@ -4,7 +4,6 @@ import Navigation from "../Navigation/Nav";
 import Products from "../Products/Products";
 import products from "../db/donna";
 import Card from "../Card";
-import "./Donna.css"
 import SidebarDonna from "../Sidebar/SidebarDonna";
 import MarcheDonna from "../marche/MarcheDonna";
 

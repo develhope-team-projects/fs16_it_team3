@@ -1,5 +1,5 @@
 
-import "./MarcheUomo.css";
+import "./Marche.css";
 import Button from '../Button'
 
 const MarcheUomo = ({ handleClick }) => {

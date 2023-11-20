@@ -4,7 +4,7 @@ import Navigation from "../Navigation/Nav";
 import Products from "../Products/Products";
 import products from "..//db/uomo";
 import Card from "../Card";
-import "./Uomo.css";
+
 import SidebarUomo from "../Sidebar/SidebarUomo";
 import MarcheUomo from "../marche/MarcheUomo";
 

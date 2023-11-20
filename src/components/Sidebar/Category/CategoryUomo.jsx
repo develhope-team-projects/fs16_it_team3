@@ -1,4 +1,4 @@
-import "./CategoryUomo.css";
+import "./Category.css";
 import Input from "../../Input";
 
 function CategoryUomo({ handleChange }) {

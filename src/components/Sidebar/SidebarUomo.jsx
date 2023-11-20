@@ -1,6 +1,6 @@
 import Price from "./Price/Price";
 import Colors from "./Colors/Colors";
-import "./SidebarUomo.css";
+import "./Sidebar.css";
 import CategoryUomo from "./Category/CategoryUomo";
 
 
