@@ -1,4 +1,4 @@
-import "./Products.css";
+import "../../style/Products.css"
 
 const Products = ({ result }) => {
   return (

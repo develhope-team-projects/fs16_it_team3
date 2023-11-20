@@ -1,5 +1,5 @@
 import Input from "../../Input";
-import "./Price.css";
+import "../../../style/Price.css"
 
 const Price = ({ handleChange }) => {
   return (

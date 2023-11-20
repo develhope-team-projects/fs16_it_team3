@@ -1,4 +1,4 @@
-import "./Colors.css";
+import "../../../style/Colors.css"
 import Input from "../../Input";
 
 const Colors = ({ handleChange }) => {
