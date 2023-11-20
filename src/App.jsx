@@ -1,37 +1,23 @@
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Navbar from './components/Navbar'
-
-
-import ShopCategory from './pages/ShopCategory'
-
-
-
+import Uomo from './components/pages/Uomo'
+import Donna from './components/pages/Donna'
+import Scarpe from './components/pages/Scarpe'
 
 function App() {
-  
+
 
   return (
-    
-    <div>
-      
-      <BrowserRouter>
-      <Navbar/>
-      <Routes>
-      
-        <Route path='/mens' element={<ShopCategory category="men"/>}/>
-        <Route path='/womens' element={<ShopCategory category="women"/>}/>
-        <Route path='/scarpe' element={<ShopCategory category="scarpe"/>}/>
-        
-      
-      
-      </Routes>
-      </BrowserRouter>
-
-      
-      
-    </div>
+    <>
+     <BrowserRouter>
+     <Routes>
+      <Route path='/uomo' element={<Uomo/>}> </Route>
+      <Route path='/donna' element={<Donna/>}> </Route>
+      <Route path='/scarpe' element={<Scarpe/>}> </Route>
+     </Routes>
+     </BrowserRouter>
+    </>
   )
 }
 

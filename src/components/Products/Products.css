@@ -1,0 +1,30 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    z-index: -2;
+  }
+  
+  .card {
+    margin: 20px;
+    cursor: pointer;
+  }
+
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+  
+  .card-img {
+    width: 330px;
+  }
+  
+  .card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ 
+  
