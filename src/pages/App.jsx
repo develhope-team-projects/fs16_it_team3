@@ -1,12 +1,14 @@
-import { CartBtn } from '../components/CartBtn'
+/* import { CartBtn } from '../components/CartBtn'
 import { CustomButton } from '../components/CustomButton'
-import { CustomInput } from '../components/CustomInput'
+import { CustomInput } from '../components/CustomInput' */
+import LoginPage from '../components/LoginPage'
+
 
 function App() {
 
   return (
     <>
-      <CustomButton text="paga"/>
+      {/* <CustomButton text="paga"/>
       <CustomButton text="login"/>
       <CustomButton text="register"/>
       <CustomButton text="uomo"/>
@@ -14,7 +16,8 @@ function App() {
       <CustomButton text="sophora"/>
       <CustomInput text="text"/>
       <CustomInput type="password" text="pass"/>
-      <CartBtn />
+      <CartBtn /> */}
+      <LoginPage/>
     </>
   )
 }
