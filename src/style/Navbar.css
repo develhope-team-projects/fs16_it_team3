@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+.navbarContainer{
+    display: flex;
+    justify-content: center;
+}
+
 .navbarwrapper {
     display: flex;
     justify-content: space-between !important;
@@ -16,7 +21,8 @@
 
 .navbarComponent {
     background-color: #000000;
-    width: 100%;
+    width: 90%;
+    height: 97px;
     border-bottom: 3px solid var(--clr-white);
     border-left: 3px solid var(--clr-white);
     border-right: 3px solid var(--clr-white);
@@ -26,7 +32,7 @@
 }
 
 .logoNav {
-    width: 120px;
+    width: 90px;
     margin-top: 4px;
 }
 
