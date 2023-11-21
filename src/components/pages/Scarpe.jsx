@@ -28,10 +28,10 @@ function Scarpe() {
     // Applying selected filter
     if (selected) {
       filteredProducts = filteredProducts.filter(
-        ({ category, color, company, gender, newPrice, title }) =>
+        ({ category, color, brand, gender, newPrice, title }) =>
           category === selected ||
           color === selected ||
-          company === selected ||
+          brand === selected ||
           gender === selected ||
           newPrice === selected ||
           title === selected 

@@ -29,10 +29,10 @@ function Uomo() {
     // Applying selected filter
     if (selected) {
       filteredProducts = filteredProducts.filter(
-        ({ category, color, company, newPrice, title }) =>
+        ({ category, color, brand, newPrice, title }) =>
           category === selected ||
           color === selected ||
-          company === selected ||
+          brand === selected ||
           newPrice === selected ||
           title === selected
       );
