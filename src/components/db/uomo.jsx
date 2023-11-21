@@ -35,7 +35,7 @@ const uomo = [
     img: p26_img,
     title: "POLY PUFFER - Giacca invernale",
     prevPrice: "€140,00",
-    newPrice: "50",
+    newPrice: "60",
     brand: "Jordan",
     color: "blue",
     category: "giacche",
@@ -45,7 +45,7 @@ const uomo = [
     title: "Nike Sportswear - Giacca invernale",
   
     prevPrice: "€140,00",
-    newPrice: "200",
+    newPrice: "70",
     brand: "Nike",
     color: "grey",
     category: "giacche",

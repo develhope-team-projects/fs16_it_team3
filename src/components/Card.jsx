@@ -9,9 +9,8 @@ const Card = ({ img, title, prevPrice, newPrice }) => {
           <h3 className="card-title">{title}</h3>
           <section className="card-price">
             <div className="price">
-               {newPrice}€
-               <br />
-              Prezzo precedente: <del>{prevPrice}€</del>
+               
+              Prezzo: <del>{prevPrice}€</del>  {newPrice}€
             </div>
           </section>
         </div>
