@@ -17,7 +17,7 @@ function Uomo() {
     setSelectedCategory(event.target.value);
   };
 
-  // ------------ Button Filtering -----------
+
   const handleClick = (event) => {
     setSelectedCategory(event.target.value);
   };
@@ -26,7 +26,7 @@ function Uomo() {
     let filteredProducts = products;
 
 
-    // Applying selected filter
+
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({ category, color, brand, newPrice, title }) =>

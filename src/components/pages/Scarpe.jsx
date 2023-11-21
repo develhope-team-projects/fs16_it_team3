@@ -12,12 +12,11 @@ function Scarpe() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
 
-  // ----------- Radio Filtering -----------
+
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
   };
 
-  // ------------ Button Filtering -----------
   const handleClick = (event) => {
     setSelectedCategory(event.target.value);
   };
@@ -25,7 +24,7 @@ function Scarpe() {
   function filteredData(products, selected) {
     let filteredProducts = products;
     
-    // Applying selected filter
+
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({ category, color, brand, gender, newPrice, title }) =>

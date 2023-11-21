@@ -12,12 +12,11 @@ function Donna() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
 
-  // ----------- Radio Filtering -----------
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
   };
 
-  // ------------ Button Filtering -----------
+ 
   const handleClick = (event) => {
     setSelectedCategory(event.target.value);
   };
@@ -26,7 +25,7 @@ function Donna() {
     let filteredProducts = products;
 
 
-    // Applying selected filter
+   
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({ category, color, brand, newPrice, title }) =>
