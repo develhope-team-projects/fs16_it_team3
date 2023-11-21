@@ -6,7 +6,7 @@ const MarcheUomo = ({ handleClick }) => {
     <>
       <div>
         <div className="recommended-flex">
-          <Button onClickHandler={handleClick} value="" title="All Products" />
+          
           <Button onClickHandler={handleClick} value="Jordan" title="Jordan" />
           <Button onClickHandler={handleClick} value="Nike" title="Nike" />
           <Button onClickHandler={handleClick} value="The North Face" title="The North Face" />
