@@ -1,0 +1,20 @@
+@import url(./root.css);
+
+.sidebar-label-container{
+    border: 2px solid transparent;
+    width: 10em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.sidebar-label-container:hover,
+.sidebar-label-container:focus {
+    border: 2px solid var(--clr-rosa);
+    box-shadow: 0px 0px 0px 7px rgb(219,2,55,20%);
+    background-color: white;
+}

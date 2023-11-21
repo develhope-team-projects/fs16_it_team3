@@ -1,3 +1,5 @@
+import "..//style/Input.css"
+
 const Input = ({ handleChange, value, title, name, color }) => {
     return (
       <label className="sidebar-label-container">
