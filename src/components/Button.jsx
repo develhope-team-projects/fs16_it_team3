@@ -1,10 +1,12 @@
 import "../style/Button.css"
 
-const Button = ({ onClickHandler, value, title }) => {
+const Button = ({ onClickHandler, value, title}) => {
     return (
-      <button onClick={onClickHandler} value={value} className="btns">
-        {title}
+      <>
+      <button onClick={onClickHandler} value={value} className="Button">
+      {title}
       </button>
+      </>
     );
   };
   
