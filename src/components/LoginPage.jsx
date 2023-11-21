@@ -39,11 +39,13 @@ export default function LoginPage() {
             : "w-10/12 lg:w-2/3 xl:w-1/3 h-1/6 flex flex-col gap-5 relative pt-8"
         }
       >
-        <img
+       <a href="/">
+       < img
           className="hidden lg:block absolute w-40 -left-2/3"
           src={Logo}
           alt="Logo del sito"
         />
+       </a>
         <h2 className="md:text-3xl  text-xl font-bold">Bentornato!</h2>
         <div className={show ? "w-full" : "hidden"}>
           <p className="border-2 border-black w-fit px-3 md:py-1 border-b-0">
