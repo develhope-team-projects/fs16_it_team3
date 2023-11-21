@@ -9,13 +9,13 @@ const Colors = ({ handleChange }) => {
         <label className="sidebar-label-container">
           <input onChange={handleChange} type="radio" value="" name="test1" />
           <span className="checkmark all"></span>
-          All
+          Tutti
         </label>
 
         <Input
           handleChange={handleChange}
           value="black"
-          title="Black"
+          title="Nero"
           name="test1"
           color="black"
         />
@@ -23,7 +23,7 @@ const Colors = ({ handleChange }) => {
         <Input
           handleChange={handleChange}
           value="blue"
-          title="Blue"
+          title="Blu"
           name="test1"
           color="blue"
         />
@@ -31,7 +31,7 @@ const Colors = ({ handleChange }) => {
         <Input
           handleChange={handleChange}
           value="red"
-          title="Red"
+          title="Rosso"
           name="test1"
           color="red"
         />
@@ -39,7 +39,7 @@ const Colors = ({ handleChange }) => {
         <Input
           handleChange={handleChange}
           value="green"
-          title="Green"
+          title="Verde"
           name="test1"
           color="green"
         />
@@ -47,7 +47,7 @@ const Colors = ({ handleChange }) => {
         <Input
           handleChange={handleChange}
           value="pink"
-          title="Pink"
+          title="Rosa"
           name="test1"
           color="pink"
         />  
@@ -55,7 +55,7 @@ const Colors = ({ handleChange }) => {
         <Input
           handleChange={handleChange}
           value="violet"
-          title="Violet"
+          title="Viola"
           name="test1"
           color="violet"
         />  
@@ -63,7 +63,7 @@ const Colors = ({ handleChange }) => {
         <Input
           handleChange={handleChange}
           value="grey"
-          title="Grey"
+          title="Grigio"
           name="test1"
           color="grey"
         />  
@@ -79,7 +79,7 @@ const Colors = ({ handleChange }) => {
             className="checkmark"
             style={{ background: "white", border: "2px solid black" }}
           ></span>
-          White
+          Bianco
         </label>
       </div>
     </>
