@@ -1,10 +1,25 @@
+import { useState } from "react";
 import "../style/FormHome.css";
 
 export const FormHome = () => {
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+      setSubmitted(true);
+    }, 2000);
+  };
+
   return (
-    <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
       <div className="popup">
-        <form className="form">
+        <form className="form" onSubmit={handleSubmit}>
           <div className="icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -39,10 +54,10 @@ export const FormHome = () => {
               ></path>
             </svg>
           </div>
-          <div className="note">
+           <div className="note">
             <label className="title">Iscriviti per aggiornamenti</label>
             <span className="subtitle">
-                Iscriviti a questa newsletter settimanale per non perderti le nostre nuove collezioni!
+              Iscriviti a questa newsletter settimanale per non perderti le nostre nuove collezioni!
             </span>
           </div>
           <input
@@ -52,7 +67,9 @@ export const FormHome = () => {
             type="email"
             className="input_field"
           />
-          <button className="submit">ISCRIVITI</button>
+          <button className="submit" type="submit" disabled={loading || submitted}>
+            {loading ? "Loading..." : submitted ? "INVIATA ✓" : "ISCRIVITI"}
+          </button>
         </form>
       </div>
     </div>
