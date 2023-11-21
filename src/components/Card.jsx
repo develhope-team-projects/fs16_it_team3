@@ -1,4 +1,4 @@
-
+import "../style/Card.css"
 
 const Card = ({ img, title, prevPrice, newPrice }) => {
   return (
@@ -10,7 +10,8 @@ const Card = ({ img, title, prevPrice, newPrice }) => {
           <section className="card-price">
             <div className="price">
                
-              Prezzo: <del>{prevPrice}€</del>  {newPrice}€
+              Prezzo: <del>{prevPrice}€</del>  {newPrice}€ <a href=""><img src = "src\assets\cart-plus-svgrepo-com.svg" alt="My Happy SVG"/></a>
+              
             </div>
           </section>
         </div>

@@ -12,3 +12,7 @@
     border: none;
     background: transparent;
 }
+
+.Button:hover {
+    color: var(--clr-red)
+}
