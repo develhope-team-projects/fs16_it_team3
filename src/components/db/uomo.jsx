@@ -32,6 +32,7 @@ import p502_img from '../../assets/img-uomo/product_502.png'
 
 const uomo = [
   {
+    id: 26,
     img: p26_img,
     title: "POLY PUFFER - Giacca invernale",
     prevPrice: "€140,00",
@@ -41,9 +42,9 @@ const uomo = [
     category: "giacche",
   },
   {
+    id: 27,
     img: p27_img,
     title: "Nike Sportswear - Giacca invernale",
-  
     prevPrice: "€140,00",
     newPrice: "70",
     brand: "Nike",
@@ -52,6 +53,7 @@ const uomo = [
   },
 
   {
+    id: 28,
     img: p28_img,
     title: "GOSEI PUFFER JACKET",
     prevPrice: "€140,00",
@@ -61,6 +63,7 @@ const uomo = [
     category: "giacche",
   },
   {
+    id: 29,
     img: p29_img,
     title: "PANT - Pantaloni cargo",
     prevPrice: "€140,00",
@@ -70,6 +73,7 @@ const uomo = [
     category: "pantaloni",
   },
   {
+    id: 30,
     img: p30_img,
     title: "AIR PANT - Pantaloni sportivi",
     prevPrice: "€140,00",
@@ -79,6 +83,7 @@ const uomo = [
     category: "pantaloni",
   },
   {
+    id: 31,
     img: p31_img,
     title: "RIPSTOP TAPER - Chino",
     prevPrice: "€140,00",
@@ -89,6 +94,7 @@ const uomo = [
   },
 
   {
+    id: 32,
     img: p32_img,
     title: "CLASSIC - Maglietta a manica lunga",
     prevPrice: "€140,00",
@@ -98,6 +104,7 @@ const uomo = [
     category: "t-shirt e polo",
   },
   {
+    id: 33,
     img: p33_img,
     title: "AIR STRETCH - T-Shirt sport",
     prevPrice: "€140,00",
@@ -107,6 +114,7 @@ const uomo = [
     category: "t-shirt e polo",
   },
   {
+    id: 34,
     img: p34_img,
     title: "CONNECTED LAYER",
     prevPrice: "€140,00",
@@ -116,6 +124,7 @@ const uomo = [
     category: "t-shirt e polo",
   },
   {
+    id: 35,
     img: p35_img,
     title: "LANGARM BRAYDEN",
     prevPrice: "€140,00",
@@ -125,6 +134,7 @@ const uomo = [
     category: "camicie",
   },
   {
+    id: 36,
     img: p36_img,
     title: "CALVERT FLEX",
     prevPrice: "€140,00",
@@ -134,6 +144,7 @@ const uomo = [
     category: "camicie",
   },
   {
+    id: 37,
     img: p37_img,
     title: "CALCUTA",
     prevPrice: "€140,00",
@@ -143,6 +154,7 @@ const uomo = [
     category: "camicie",
   },
   {
+    id: 38,
     img: p38_img,
     title: "FELPA BASIC MAXI LOGO",
     prevPrice: "€140,00",
@@ -152,6 +164,7 @@ const uomo = [
     category: "maglie e felpe",
   },
   {
+    id: 39,
     img: p39_img,
     title: "AIR CREW",
     prevPrice: "€140,00",
@@ -161,6 +174,7 @@ const uomo = [
     category: "maglie e felpe",
   },
   {
+    id: 40,
     img: p40_img,
     title: "MONOLOGO CREW NECK",
     prevPrice: "€140,00",
@@ -170,6 +184,7 @@ const uomo = [
     category: "maglie e felpe",
   },
   {
+    id: 41,
     img: p41_img,
     title: "Jeans baggy",
     prevPrice: "€140,00",
@@ -179,6 +194,7 @@ const uomo = [
     category: "jeans",
   },
   {
+    id: 42,
     img: p42_img,
     title: "Jeans baggy",
     prevPrice: "€140,00",
@@ -188,6 +204,7 @@ const uomo = [
     category: "jeans",
   },
   {
+    id: 43,
     img: p43_img,
     title: "501® ORIGINAL",
     prevPrice: "€140,00",
@@ -197,6 +214,7 @@ const uomo = [
     category: "jeans",
   },
   {
+    id: 44,
     img: p44_img,
     title: "CARSTEN - Pantaloni sportivi",
     prevPrice: "€140,00",
@@ -206,6 +224,7 @@ const uomo = [
     category: "bermuda",
   },
   {
+    id: 45,
     img: p45_img,
     title: "GRAPHIC - Shorts",
     prevPrice: "€140,00",
@@ -215,6 +234,7 @@ const uomo = [
     category: "bermuda",
   },
   {
+    id: 46,
     img: p46_img,
     title: "BOSTON SWINGMAN SHORT",
     prevPrice: "€140,00",
@@ -224,6 +244,7 @@ const uomo = [
     category: "bermuda",
   },
   {
+    id: 47,
     img: p47_img,
     title: "NBA LEBRON JAMES",
     prevPrice: "€140,00",
@@ -233,6 +254,7 @@ const uomo = [
     category: "abbigliamento sportivo",
   },
   {
+    id: 48,
     img: p48_img,
     title: "NEW YORK YANKEES",
     prevPrice: "€140,00",
@@ -242,6 +264,7 @@ const uomo = [
     category: "abbigliamento sportivo",
   },
   {
+    id: 49,
     img: p49_img,
     title: "ALFONSA HOODY",
     prevPrice: "€140,00",
@@ -251,6 +274,7 @@ const uomo = [
     category: "abbigliamento sportivo",
   },
   {
+    id: 50,
     img: p50_img,
     title: "Swimwear",
     prevPrice: "€140,00",
@@ -260,6 +284,7 @@ const uomo = [
     category: "intimo",
   },
   {
+    id: 501,
     img: p501_img,
     title: "Calzamaglia",
     prevPrice: "€140,00",
@@ -269,6 +294,7 @@ const uomo = [
     category: "intimo",
   },
   {
+    id: 502,
     img: p502_img,
     title: "Accappatoio",
     prevPrice: "€140,00",
