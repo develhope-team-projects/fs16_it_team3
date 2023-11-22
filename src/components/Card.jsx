@@ -1,10 +1,10 @@
 import "../style/Card.css"
 
-const Card = ({ img, title, prevPrice, newPrice, cart, setCart,  }) => {
+const Card = ({ img, title, prevPrice, newPrice, cart, setCart, id }) => {
   function addToCart(event) {
     event.preventDefault();
 
-    const existingItemIndex = cart.findIndex(item => item.title === event.target.name);
+    const existingItemIndex = cart.findIndex(item => item.id === event.target.dataset.id);
 
     if (existingItemIndex !== -1) {
         const updatedCart = cart.map((item, index) => {
@@ -16,7 +16,7 @@ const Card = ({ img, title, prevPrice, newPrice, cart, setCart,  }) => {
 
         setCart(updatedCart);
     } else {
-        setCart([...cart, { title: event.target.name, price: parseFloat(event.target.dataset.price), quantity: 1 }]);
+        setCart([...cart, { id: event.target.dataset.id, title: event.target.name, img: event.target.dataset.img,  price: event.target.dataset.price, quantity: 1 }]);
     }
 }
 
@@ -29,7 +29,7 @@ const Card = ({ img, title, prevPrice, newPrice, cart, setCart,  }) => {
           <section className="card-price">
             <div className="price">
                
-              Prezzo: <del>{prevPrice}€</del>  {newPrice}€ <a href=""><img name = {title} data-price={newPrice}  onClick={addToCart} src = "src\assets\cart-plus-svgrepo-com.svg" alt="My Happy SVG"/></a>
+              Prezzo: <del>{prevPrice}€</del>  {newPrice}€ <a href=""><img name = {title} data-price={newPrice} data-id = {id} data-img = {img} onClick={addToCart} src = "src\assets\cart-plus-svgrepo-com.svg" alt="My Happy SVG"/></a>
               
             </div>
           </section>

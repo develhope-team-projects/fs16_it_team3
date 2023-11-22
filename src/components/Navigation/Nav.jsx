@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Nav = (cart) => {
   function showCart() {
-    console.log(cart);
+    console.log(JSON.stringify(cart, null, 2));
   }
   return (
     <div className="navbar">
@@ -14,6 +14,7 @@ const Nav = (cart) => {
             <li><Link to="/uomo">Uomo</Link></li>
             <li><Link to="/donna">Donna</Link></li>
             <li><Link to="/scarpe">Scarpe</Link></li>
+            <li><Link to="/carello">Carello</Link></li>
         </ul>
     </div>
   );

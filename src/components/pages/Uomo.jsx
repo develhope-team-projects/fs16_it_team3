@@ -39,13 +39,14 @@ function Uomo({cart , setCart}) {
     }
 
     return filteredProducts.map(
-      ({ img, title, prevPrice, newPrice }) => (
+      ({ img, title, prevPrice, newPrice, id }) => (
         <Card
           key={Math.random()}
           img={img}
           title={title}
           prevPrice={prevPrice}
           newPrice={newPrice}
+          id = {id}
           cart={cart}
           setCart={setCart}
         />

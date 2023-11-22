@@ -5,6 +5,7 @@ import Uomo from './components/pages/Uomo'
 import Donna from './components/pages/Donna'
 import Scarpe from './components/pages/Scarpe'
 import { useState } from 'react'
+import { CartPage } from './CartPage'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Route path='/uomo' element={<Uomo cart={cart} setCart={setCart}/>}> </Route>
       <Route path='/donna' element={<Donna cart={cart} setCart={setCart}/>}> </Route>
       <Route path='/scarpe' element={<Scarpe cart={cart} setCart={setCart}/>}> </Route>
+      <Route path='/carello' element={<CartPage cart={cart} setCart={setCart}/>}> </Route>
      </Routes>
      </BrowserRouter>
     </>
