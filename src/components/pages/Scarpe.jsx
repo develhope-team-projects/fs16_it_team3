@@ -5,8 +5,8 @@ import Products from "../Products/Products";
 import products from "../db/data";
 
 import Sidebar from "../Sidebar/Sidebar";
-import Card from "../Card";
 import GenderScarpe from "../marche/GenderScarpe";
+import Product from "../Product";
 
 function Scarpe() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -21,34 +21,34 @@ function Scarpe() {
     setSelectedCategory(event.target.value);
   };
 
-  function filteredData(products, selected) {
+    function filteredData(products, selected) {
     let filteredProducts = products;
-    
-
+  
     if (selected) {
       filteredProducts = filteredProducts.filter(
-        ({ category, color, brand, gender, newPrice, title }) =>
+        ({ category, color, brand, gender, price, title }) =>
           category === selected ||
           color === selected ||
           brand === selected ||
           gender === selected ||
-          newPrice === selected ||
-          title === selected 
-          
+          title === selected ||
+          (price <= selected && price >= selected - 50) 
       );
     }
-
-    return filteredProducts.map(
-      ({ img, title, prevPrice, newPrice }) => (
-        <Card
-          key={Math.random()}
-          img={img}
-          title={title}
-          prevPrice={prevPrice}
-          newPrice={newPrice}
-        />
-      )
-    );
+  
+    return filteredProducts.map((product) => (
+      <Product
+        key={product.id}
+        id={product.id}
+        img={product.img}
+        title={product.title}
+        prevPrice={product.prevPrice}
+        newPrice={product.newPrice}
+        brand={product.brand}
+        color={product.color}
+        category={product.category}
+      />
+    ));
   }
 
   const result = filteredData(products, selectedCategory );
