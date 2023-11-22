@@ -7,6 +7,7 @@ import Card from "../Card";
 
 import SidebarUomo from "../Sidebar/SidebarUomo";
 import MarcheUomo from "../marche/MarcheUomo";
+import Product from "../Product";
 
 function Uomo() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -22,33 +23,33 @@ function Uomo() {
     setSelectedCategory(event.target.value);
   };
 
-  function filteredData(products, selected, query) {
+  function filteredData(products, selected) {
     let filteredProducts = products;
-
-
-
+  
     if (selected) {
       filteredProducts = filteredProducts.filter(
-        ({ category, color, brand, newPrice, title }) =>
+        ({ category, color, brand, price, title }) =>
           category === selected ||
           color === selected ||
           brand === selected ||
-          newPrice === selected ||
-          title === selected
+          title === selected ||
+          (price <= selected && price >= selected - 50) 
       );
     }
-
-    return filteredProducts.map(
-      ({ img, title, prevPrice, newPrice }) => (
-        <Card
-          key={Math.random()}
-          img={img}
-          title={title}
-          prevPrice={prevPrice}
-          newPrice={newPrice}
-        />
-      )
-    );
+  
+    return filteredProducts.map((product) => (
+      <Product
+        key={product.id}
+        id={product.id}
+        img={product.img}
+        title={product.title}
+        prevPrice={product.prevPrice}
+        newPrice={product.newPrice}
+        brand={product.brand}
+        color={product.color}
+        category={product.category}
+      />
+    ));
   }
 
   const result = filteredData(products, selectedCategory, );

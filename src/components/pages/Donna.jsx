@@ -6,6 +6,7 @@ import products from "../db/donna";
 import Card from "../Card";
 import SidebarDonna from "../Sidebar/SidebarDonna";
 import MarcheDonna from "../marche/MarcheDonna";
+import Product from "../Product";
 
 
 function Donna() {
@@ -23,31 +24,31 @@ function Donna() {
 
   function filteredData(products, selected) {
     let filteredProducts = products;
-
-
-   
+  
     if (selected) {
       filteredProducts = filteredProducts.filter(
-        ({ category, color, brand, newPrice, title }) =>
+        ({ category, color, brand, price, title }) =>
           category === selected ||
           color === selected ||
           brand === selected ||
-          newPrice === selected ||
-          title === selected
+          title === selected ||
+          (price <= selected && price >= selected - 50) 
       );
     }
-
-    return filteredProducts.map(
-      ({ img, title, prevPrice, newPrice }) => (
-        <Card
-          key={Math.random()}
-          img={img}
-          title={title}
-          prevPrice={prevPrice}
-          newPrice={newPrice}
-        />
-      )
-    );
+  
+    return filteredProducts.map((product) => (
+      <Product
+        key={product.id}
+        id={product.id}
+        img={product.img}
+        title={product.title}
+        prevPrice={product.prevPrice}
+        newPrice={product.newPrice}
+        brand={product.brand}
+        color={product.color}
+        category={product.category}
+      />
+    ));
   }
 
   const result = filteredData(products, selectedCategory);
