@@ -31,6 +31,7 @@ import p207_img from '../../assets/img-donna/product_207.png'
 
 const donna = [
     {
+      id: 1,
       img: p1_img,
       title: "EXCLUSIVE V NECK MINI DRESS",
       prevPrice: "$140,00",
@@ -40,6 +41,7 @@ const donna = [
       category: "vestiti",
     },
     {
+      id: 2,
       img: p2_img,
       title: "CLOCKHOUSE",
       prevPrice: "$140,00",
@@ -50,6 +52,7 @@ const donna = [
     },
   
     {
+      id: 3,
       img: p3_img,
       title: "SQUARE NECK MINI",
       prevPrice: "$140,00",
@@ -59,6 +62,7 @@ const donna = [
       category: "vestiti",
     },
     {
+      id: 4,
       img: p4_img,
       title: "RUDINA",
       prevPrice: "$140,00",
@@ -68,6 +72,7 @@ const donna = [
       category: "t-shirt e top",
     },
     {
+      id: 5,
       img: p5_img,
       title: "COWL NECK TOPs",
       prevPrice: "$140,00",
@@ -77,6 +82,7 @@ const donna = [
       category: "t-shirt e top",
     },
     {
+      id: 6,
       img: p6_img,
       title: "SEAMLESS TEXTURED",
       prevPrice: "$140,00",
@@ -86,6 +92,7 @@ const donna = [
       category: "t-shirt e top",
     },
     {
+      id: 7,
       img: p7_img,
       title: "Stretch bell bottom trousers",
       prevPrice: "$140,00",
@@ -95,6 +102,7 @@ const donna = [
       category: "pantaloni",
     },
     {
+      id: 8,
       img: p8_img,
       title: "SPACER JOGGERS",
       prevPrice: "$140,00",
@@ -105,6 +113,7 @@ const donna = [
     },
   
     {
+      id: 9,
       img: p9_img,
       title: "STRAIGHT FIT",
       prevPrice: "$140,00",
@@ -114,6 +123,7 @@ const donna = [
       category: "pantaloni",
     },
     {
+      id: 10,
       img: p10_img,
       title: "WITH CROSSOVER WAISTBAND",
       prevPrice: "$140,00",
@@ -123,6 +133,7 @@ const donna = [
       category: "jeans",
     },
     {
+      id: 11,
       img: p11_img,
       title: "VINTAGE WITH RIPS",
       prevPrice: "$140,00",
@@ -132,6 +143,7 @@ const donna = [
       category: "jeans",
     },
     {
+      id: 12,
       img: p12_img,
       title: "501® ORIGINAL",
       prevPrice: "$140,00",
@@ -141,6 +153,7 @@ const donna = [
       category: "jeans",
     },
     {
+      id: 13,
       img: p13_img,
       title: "Smanicato",
       prevPrice: "$140,00",
@@ -150,6 +163,7 @@ const donna = [
       category: "giacche",
     },
     {
+      id: 14,
       img: p14_img,
       title: "501® ORIGINAL",
       prevPrice: "$140,00",
@@ -160,6 +174,7 @@ const donna = [
     },
   
     {
+      id: 15,
       img: p15_img,
       title: "JACKET 2000",
       prevPrice: "$140,00",
@@ -169,6 +184,7 @@ const donna = [
       category: "giacche",
     },
     {
+      id: 16,
       img: p16_img,
       title: "SIDE TIE CHEEKY",
       prevPrice: "$140,00",
@@ -178,6 +194,7 @@ const donna = [
       category: "moda mare",
     },
     {
+      id: 17,
       img: p17_img,
       title: "ISLAND SONG HIKE-DA",
       prevPrice: "$140,00",
@@ -187,6 +204,7 @@ const donna = [
       category: "moda mare",
     },
     {
+      id: 18,
       img: p18_img,
       title: "Bikini pezzo sotto",
       prevPrice: "$140,00",
@@ -196,6 +214,7 @@ const donna = [
       category: "moda mare",
     },
     {
+      id: 19,
       img: p19_img,
       title: "GONNA - Minigonna",
       prevPrice: "$140,00",
@@ -205,6 +224,7 @@ const donna = [
       category: "gonne",
     },
     {
+      id: 20,
       img: p20_img,
       title: "Gonna a campana",
       prevPrice: "$140,00",
@@ -215,6 +235,7 @@ const donna = [
     },
   
     {
+      id: 21,
       img: p21_img,
       title: "SANTOS MINI X KRISTINA",
       prevPrice: "$140,00",
@@ -224,6 +245,7 @@ const donna = [
       category: "gonne",
     },
     {
+      id: 22,
       img: p22_img,
       title: "Tuta jumpsuit",
       prevPrice: "$140,00",
@@ -233,6 +255,7 @@ const donna = [
       category: "tute jumpsuit",
     },
     {
+      id: 23,
       img: p23_img,
       title: "Tuta jumpsuit",
       prevPrice: "$140,00",
@@ -242,6 +265,7 @@ const donna = [
       category: "tute jumpsuit",
     },
     {
+      id: 24,
       img: p24_img,
       title: "JENNI",
       prevPrice: "$140,00",
@@ -251,6 +275,7 @@ const donna = [
       category: "tute jumpsuit",
     },
     {
+      id: 25,
       img: p25_img,
       title: "VESTE BOLERO",
       prevPrice: "$140,00",
@@ -260,6 +285,7 @@ const donna = [
       category: "intimo notte e loungewear",
     },
     {
+      id: 206,
       img: p206_img,
       title: "DEMI WIRED EXTROVERT",
       prevPrice: "$140,00",
@@ -270,6 +296,7 @@ const donna = [
     },
   
     {
+      id: 207,
       img: p207_img,
       title: "ENLIGHTENING",
       prevPrice: "$140,00",
