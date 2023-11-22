@@ -4,17 +4,19 @@ import './App.css'
 import Uomo from './components/pages/Uomo'
 import Donna from './components/pages/Donna'
 import Scarpe from './components/pages/Scarpe'
+import { useState } from 'react'
 
 function App() {
 
-
+  const [cart, setCart] = useState([])
   return (
     <>
+    
      <BrowserRouter>
      <Routes>
-      <Route path='/uomo' element={<Uomo/>}> </Route>
-      <Route path='/donna' element={<Donna/>}> </Route>
-      <Route path='/scarpe' element={<Scarpe/>}> </Route>
+      <Route path='/uomo' element={<Uomo cart={cart} setCart={setCart}/>}> </Route>
+      <Route path='/donna' element={<Donna cart={cart} setCart={setCart}/>}> </Route>
+      <Route path='/scarpe' element={<Scarpe cart={cart} setCart={setCart}/>}> </Route>
      </Routes>
      </BrowserRouter>
     </>

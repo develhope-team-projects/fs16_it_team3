@@ -8,7 +8,7 @@ import SidebarDonna from "../Sidebar/SidebarDonna";
 import MarcheDonna from "../marche/MarcheDonna";
 
 
-function Donna() {
+function Donna({cart, setCart}) {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
 
@@ -45,6 +45,8 @@ function Donna() {
           title={title}
           prevPrice={prevPrice}
           newPrice={newPrice}
+          cart={cart}
+          setCart={setCart}
         />
       )
     );
@@ -55,7 +57,7 @@ function Donna() {
   return (
     <>
       <SidebarDonna handleChange={handleChange} />
-      <Navigation />
+      <Navigation cart={cart}/>
       <MarcheDonna handleClick={handleClick} />
       <Products result={result} />
     </>

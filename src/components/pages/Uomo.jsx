@@ -8,7 +8,7 @@ import Card from "../Card";
 import SidebarUomo from "../Sidebar/SidebarUomo";
 import MarcheUomo from "../marche/MarcheUomo";
 
-function Uomo() {
+function Uomo({cart , setCart}) {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
 
@@ -46,6 +46,8 @@ function Uomo() {
           title={title}
           prevPrice={prevPrice}
           newPrice={newPrice}
+          cart={cart}
+          setCart={setCart}
         />
       )
     );
@@ -56,7 +58,7 @@ function Uomo() {
   return (
     <>
       <SidebarUomo handleChange={handleChange} />
-      <Navigation />
+      <Navigation cart={cart}/>
       <MarcheUomo handleClick={handleClick} />
       <Products result={result} />
     </>

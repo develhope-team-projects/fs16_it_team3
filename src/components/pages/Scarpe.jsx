@@ -8,7 +8,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import Card from "../Card";
 import GenderScarpe from "../marche/GenderScarpe";
 
-function Scarpe() {
+function Scarpe({cart, setCart}) {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
 
@@ -46,6 +46,8 @@ function Scarpe() {
           title={title}
           prevPrice={prevPrice}
           newPrice={newPrice}
+          cart={cart}
+          setCart={setCart}
         />
       )
     );
@@ -56,7 +58,7 @@ function Scarpe() {
   return (
     <>
       <Sidebar handleChange={handleChange} />
-      <Navigation />
+      <Navigation cart={cart}/>
       <GenderScarpe handleClick={handleClick} />
       <Products result={result} />
     </>

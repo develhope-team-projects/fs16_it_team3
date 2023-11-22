@@ -3,11 +3,14 @@ import "../../style/Nav.css"
 import { Link } from "react-router-dom";
 
 
-const Nav = () => {
+const Nav = (cart) => {
+  function showCart() {
+    console.log(cart);
+  }
   return (
     <div className="navbar">
       <ul className="nav-menu">
-      
+            <li><button onClick={showCart}>Carrello</button></li>
             <li><Link to="/uomo">Uomo</Link></li>
             <li><Link to="/donna">Donna</Link></li>
             <li><Link to="/scarpe">Scarpe</Link></li>
