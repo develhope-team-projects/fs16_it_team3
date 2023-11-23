@@ -5,7 +5,7 @@ import Uomo from './components/pages/Uomo'
 import Donna from './components/pages/Donna'
 import Scarpe from './components/pages/Scarpe'
 import { useState } from 'react'
-import { CartPage } from './CartPage'
+import { CartPage } from './components/CartPage'
 
 function App() {
 

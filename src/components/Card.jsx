@@ -16,7 +16,7 @@ const Card = ({ img, title, prevPrice, newPrice, cart, setCart, id }) => {
 
         setCart(updatedCart);
     } else {
-        setCart([...cart, { id: event.target.dataset.id, title: event.target.name, img: event.target.dataset.img,  price: event.target.dataset.price, quantity: 1 }]);
+        setCart([...cart, { id: event.target.dataset.id, title: event.target.name, img: event.target.dataset.img, prevPrice: event.target.dataset.prevprice,  price: event.target.dataset.price, quantity: 1 }]);
     }
 }
 
@@ -29,7 +29,7 @@ const Card = ({ img, title, prevPrice, newPrice, cart, setCart, id }) => {
           <section className="card-price">
             <div className="price">
                
-              Prezzo: <del>{prevPrice}€</del>  {newPrice}€ <a href=""><img name = {title} data-price={newPrice} data-id = {id} data-img = {img} onClick={addToCart} src = "src\assets\cart-plus-svgrepo-com.svg" alt="My Happy SVG"/></a>
+              Prezzo: <del>{prevPrice}€</del>  {newPrice}€ <a href=""><img name = {title} data-prevprice = {prevPrice} data-price={newPrice} data-id = {id} data-img = {img}  onClick={addToCart} src = "src\assets\cart-plus-svgrepo-com.svg" alt="My Happy SVG"/></a>
               
             </div>
           </section>
