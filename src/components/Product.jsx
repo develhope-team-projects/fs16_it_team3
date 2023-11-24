@@ -1,19 +1,33 @@
+import "..//style/Product.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import Card from "./Card";
 
-import React from 'react';
-import Card from './Card';
-
-const Product = ({ id, img, title, prevPrice, newPrice, brand, color, category }) => {
+const Product = ({
+  id,
+  img,
+  title,
+  prevPrice,
+  newPrice,
+  brand,
+  color,
+  category,
+}) => {
   return (
-    <Card
-      key={id}
-      img={img}
-      title={title}
-      prevPrice={prevPrice}
-      newPrice={newPrice}
-      brand={brand}
-      color={color}
-      category={category}
-    />
+    <div>
+      <Link to={`/product/${id}`}>
+        <Card
+          key={id}
+          img={img}
+          title={title}
+          prevPrice={prevPrice}
+          newPrice={newPrice}
+          brand={brand}
+          color={color}
+          category={category}
+        />
+      </Link>
+    </div>
   );
 };
 

@@ -64,7 +64,7 @@ const data = [
     prevPrice: "€100",
     newPrice: "88.99",
     brand: "Nike",
-    color: "red",
+    color: "white",
     category: "lifestyle",
     gender: "uomo",
     price: 88.99,
@@ -544,9 +544,6 @@ const data = [
     price: 61.99,
   },
 
-
-
-  
 ];
 
 export default data;

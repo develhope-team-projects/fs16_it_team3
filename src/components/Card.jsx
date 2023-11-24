@@ -1,4 +1,4 @@
-import "../style/Card.css"
+import "../style/Card.css";
 
 const Card = ({ img, title, prevPrice, newPrice }) => {
   return (
@@ -9,9 +9,14 @@ const Card = ({ img, title, prevPrice, newPrice }) => {
           <h3 className="card-title">{title}</h3>
           <section className="card-price">
             <div className="price">
-               
-              Prezzo: <del>{prevPrice}€</del>  {newPrice}€ <a href=""><img src = "src\assets\cart-plus-svgrepo-com.svg" alt="My Happy SVG"/></a>
+              Prezzo: <del>{prevPrice}€</del> {newPrice}€{" "}
               
+                <img className="cart-icon"
+                  src="src\assets\cart-plus-svgrepo-com.svg"
+                  alt="My Happy SVG"
+                />
+               
+
             </div>
           </section>
         </div>

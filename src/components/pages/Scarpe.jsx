@@ -21,7 +21,7 @@ function Scarpe() {
     setSelectedCategory(event.target.value);
   };
 
-    function filteredData(products, selected) {
+  function filteredData(products, selected) {
     let filteredProducts = products;
   
     if (selected) {
@@ -32,7 +32,7 @@ function Scarpe() {
           brand === selected ||
           gender === selected ||
           title === selected ||
-          (price <= selected && price >= selected - 50) 
+          (price <= selected && price >= selected - 50)
       );
     }
   

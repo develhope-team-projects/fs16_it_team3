@@ -13,7 +13,7 @@ function Uomo() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
 
-  // ----------- Radio Filtering -----------
+
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
   };

@@ -1,14 +1,13 @@
-import "../style/Button.css"
+import "../style/Button.css";
 
-const Button = ({ onClickHandler, value, title}) => {
-    return (
-      <>
+const Button = ({ onClickHandler, value, title }) => {
+  return (
+    <>
       <button onClick={onClickHandler} value={value} className="Button">
-      {title}
+        {title}
       </button>
-      </>
-    );
-  };
-  
-  export default Button;
-  
+    </>
+  );
+};
+
+export default Button;
