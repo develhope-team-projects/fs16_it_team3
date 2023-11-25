@@ -40,7 +40,7 @@ export function CartPage({cart, setCart}) {
                                     <option key={num + 1} value={num + 1}>{num + 1}</option>
                                     ))}
                                 </select>
-                                <img style={{width: 20, cursor: "pointer"} } onClick={handleDelete} name = {item.id} src="https://cdn-icons-png.flaticon.com/512/73/73806.png" alt="" />
+                                <img className="delete" style={{width: 20, cursor: "pointer"} } onClick={handleDelete} name = {item.id} src="https://cdn-icons-png.flaticon.com/512/73/73806.png" alt="" />
                             </div>
                             
                         </div>
@@ -53,6 +53,10 @@ export function CartPage({cart, setCart}) {
                     
                     <div >Totale: <div className="old-price">{cart.reduce((acc, item) => acc + parseFloat(item.prevPrice.replace(/[^\d.-]/g, ''))  * item.quantity / 100, 0)}€</div> {cart.reduce((acc, item) => acc + item.price * item.quantity, 0)}€</div>
                     <button>Acquista</button>
+
+                    <p>
+                        
+                    </p>
                 </div>
             </div>
       
