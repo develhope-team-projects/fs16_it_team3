@@ -66,6 +66,7 @@ export const FormHome = () => {
             name="email"
             type="email"
             className="input_field"
+            required
           />
           <button className="submit" type="submit" disabled={loading || submitted}>
             {loading ? "Loading..." : submitted ? "INVIATA ✓" : "ISCRIVITI"}
