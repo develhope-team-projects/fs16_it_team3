@@ -13,6 +13,10 @@ export const FormHome = () => {
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
+
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 4000);
     }, 2000);
   };
 
