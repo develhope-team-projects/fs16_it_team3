@@ -20,6 +20,11 @@ export default function LoginPage() {
     console.log(data)
   }
 
+  function login2(event) {
+    event.preventDefault();
+    setShow(true);
+  }
+
   function handleInput(event) {
     const { name, value } = event.target;
     setData((data) => {
@@ -83,18 +88,33 @@ export default function LoginPage() {
           </div>
         </div>
         <button
-          className="w-full px-2 py-2 bg-black hover:bg-slate-400 text-white text-center"
+          className={ !show? "hidden" : "w-full px-2 py-2 bg-black hover:bg-slate-400 text-white text-center"}
           onClick={login}
           type="submit"
         >
           Accedi
         </button>
+        <button
+          className={ show? "hidden" : "w-full px-2 py-2 hover:text-white text-center border-4  hover:bg-slate-400 border-black font-bold"}
+          onClick={login2}
+          type="submit"
+        >
+          Accedi
+        </button>
+        <div className="flex justify-between items-center">
         <a
-          className="hover:border-b-4 w-fit border-red-600 text-red-600 text-xl font-bold"
+          className="hover:underline w-fit text-red-600 text-xl font-bold"
           href="/"
         >
           Hai dimenticato la password?
         </a>
+        <a
+          className="hover:underline w-fit text-red-600 text-xl font-bold"
+          href="/"
+        >
+          Entra come ospite!
+        </a>
+        </div>
       </form>
       <div className="w-screen border-b border-slate-400">&nbsp;</div>
       <form className="w-10/12 lg:w-2/3 xl:w-1/3 py-2 flex flex-col gap-5 pt-10">
