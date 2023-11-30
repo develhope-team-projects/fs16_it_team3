@@ -1,0 +1,22 @@
+@import url(./root.css);
+
+.Button {
+   display: flex;
+   font-size: 15px;
+   margin-top: 20px;
+   margin-left: 14px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    transition: color 0.4s;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.Button:hover {
+    color: var(--clr-red)
+
+}
