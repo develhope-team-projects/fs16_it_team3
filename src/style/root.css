@@ -1,8 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: openfont;
+  src: url(../assets/Open.ttf);
+}
+
+.myfont {
+  font-family: "openfont";
+}
+
 :root {
-    --clr-red: #db0237;
-    --clr-rosa: #c19898;
-    --clr-blue: #62929a;
-    --clr-gray: #444444;
-    --clr-black: #171717;
-    --clr-white: #ededed;
+  --clr-red: #db0237;
+  --clr-rosa: #c19898;
+  --clr-blue: #62929a;
+  --clr-gray: #444444;
+  --clr-black: #171717;
+  --clr-white: #ededed;
 }
