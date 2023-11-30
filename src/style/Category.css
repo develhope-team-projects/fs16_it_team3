@@ -9,7 +9,7 @@
   }
   
   .sidebar-label-container {
-    display: block;
+    display: flex;
     position: relative;
     padding-left: 35px;
     margin-bottom: 10px;
@@ -18,6 +18,8 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    justify-content: center;
+    align-items: center;
   }
   
   .sidebar-label-container input {

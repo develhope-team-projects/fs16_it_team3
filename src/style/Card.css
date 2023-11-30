@@ -1,5 +1,11 @@
 a {
     margin-left: 120px;
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
 .cart-icon {
