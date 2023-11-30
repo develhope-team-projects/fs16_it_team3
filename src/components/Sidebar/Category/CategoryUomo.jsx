@@ -50,7 +50,7 @@ function CategoryUomo({ handleChange }) {
         <Input
           handleChange={handleChange}
           value="abbigliamento sportivo"
-          title="Abbigliamento sportivo"
+          title="Sportswear"
           name="test"
         />
         <Input

@@ -1,10 +1,7 @@
 import { useState } from "react";
-
-import Navigation from "../Navigation/Nav";
 import Products from "../Products/Products";
 import products from "..//db/uomo";
 import Card from "../Card";
-
 import SidebarUomo from "../Sidebar/SidebarUomo";
 import MarcheUomo from "../marche/MarcheUomo";
 import Product from "../Product";
@@ -57,7 +54,6 @@ function Uomo() {
   return (
     <>
       <SidebarUomo handleChange={handleChange} />
-      <Navigation />
       <MarcheUomo handleClick={handleClick} />
       <Products result={result} />
     </>

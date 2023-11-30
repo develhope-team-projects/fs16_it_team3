@@ -10,7 +10,6 @@ const Sidebar = ({ handleChange }) => {
       <section className="sidebar">
         <Category handleChange={handleChange} />
         <Price handleChange={handleChange} />
-        <Colors handleChange={handleChange} />
       </section>
     </>
   );

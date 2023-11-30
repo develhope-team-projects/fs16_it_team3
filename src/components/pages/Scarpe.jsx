@@ -1,17 +1,12 @@
 import { useState } from "react";
-
-import Navigation from "../Navigation/Nav";
 import Products from "../Products/Products";
 import products from "../db/data";
-
 import Sidebar from "../Sidebar/Sidebar";
 import GenderScarpe from "../marche/GenderScarpe";
 import Product from "../Product";
 
 function Scarpe() {
   const [selectedCategory, setSelectedCategory] = useState(null);
-
-
 
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
@@ -23,7 +18,7 @@ function Scarpe() {
 
   function filteredData(products, selected) {
     let filteredProducts = products;
-  
+
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({ category, color, brand, gender, price, title }) =>
@@ -35,7 +30,7 @@ function Scarpe() {
           (price <= selected && price >= selected - 50)
       );
     }
-  
+
     return filteredProducts.map((product) => (
       <Product
         key={product.id}
@@ -51,14 +46,15 @@ function Scarpe() {
     ));
   }
 
-  const result = filteredData(products, selectedCategory );
+  const result = filteredData(products, selectedCategory);
 
   return (
     <>
       <Sidebar handleChange={handleChange} />
-      <Navigation />
-      <GenderScarpe handleClick={handleClick} />
-      <Products result={result} />
+      <div style={{marginTop: "250px"}}>
+        <GenderScarpe handleClick={handleClick} />
+        <Products result={result} />
+      </div>
     </>
   );
 }
