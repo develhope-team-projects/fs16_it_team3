@@ -7,8 +7,9 @@ import Card from "../Card";
 
 import SidebarUomo from "../Sidebar/SidebarUomo";
 import MarcheUomo from "../marche/MarcheUomo";
+import AddToCartMessage from "../AddToCartMessage";
 
-function Uomo({cart , setCart}) {
+function Uomo({cart , setCart, message, setMessage}) {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
 
@@ -49,6 +50,8 @@ function Uomo({cart , setCart}) {
           id = {id}
           cart={cart}
           setCart={setCart}
+          message = {message}
+          setMessage = {setMessage}
         />
       )
     );
@@ -62,6 +65,7 @@ function Uomo({cart , setCart}) {
       <Navigation cart={cart}/>
       <MarcheUomo handleClick={handleClick} />
       <Products result={result} />
+      
     </>
   );
 }

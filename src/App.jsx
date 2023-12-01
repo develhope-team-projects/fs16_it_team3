@@ -10,6 +10,7 @@ import Cookies from 'js-cookie';
 function App() {
   const initialCart = Cookies.get('cartArray');
   const [cart, setCart] = useState(initialCart ? JSON.parse(initialCart) : []);
+  const [message, setMessage] = useState(false);
 
   useEffect(() => {
     Cookies.set('cartArray', JSON.stringify(cart));
@@ -19,7 +20,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/uomo' element={<Uomo cart={cart} setCart={setCart} />}></Route>
+          <Route path='/uomo' element={<Uomo cart={cart} setCart={setCart} message={message} setMessage={setMessage} />}></Route>
           <Route path='/donna' element={<Donna cart={cart} setCart={setCart} />}></Route>
           <Route path='/scarpe' element={<Scarpe cart={cart} setCart={setCart} />}></Route>
           <Route path='/carello' element={<CartPage cart={cart} setCart={setCart} />}></Route>

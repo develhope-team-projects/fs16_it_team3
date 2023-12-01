@@ -1,9 +1,20 @@
+
 import "../style/Card.css"
+import AddToCartMessage from "./AddToCartMessage";
 
-const Card = ({ img, title, prevPrice, newPrice, cart, setCart, id }) => {
+const Card = ({ img, title, prevPrice, newPrice, cart, setCart, id, message, setMessage }) => {
+  
+  
   function addToCart(event) {
+    
     event.preventDefault();
-
+   
+    setMessage(true);
+    console.log(message)
+    setTimeout(() => {
+      setMessage(false);
+    }, 1000);
+     
     const existingItemIndex = cart.findIndex(item => item.id === event.target.dataset.id);
 
     if (existingItemIndex !== -1) {
@@ -22,6 +33,8 @@ const Card = ({ img, title, prevPrice, newPrice, cart, setCart, id }) => {
 
   return (
     <>
+      {message && <AddToCartMessage />}
+      
       <div className="card">
         <img src={img} alt={title} className="card-img" />
         <div className="card-details">
