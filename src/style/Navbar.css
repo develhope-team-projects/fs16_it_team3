@@ -15,8 +15,7 @@
     display: flex;
     justify-content: space-between ;
     align-items: center;
-    margin-left: 200px;
-    margin-right: 100px;
+    
 }
 
 .navbarComponent {
@@ -46,17 +45,18 @@
 .userBtnNav {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    
     width: 45px;
     height: 45px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    position: relative;
+    
     overflow: hidden;
     transition-duration: .1s;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
     background-color: rgb(0, 0, 0);
+    margin-right: 30px;
 }
 
 .userBtnNav:hover {
@@ -69,4 +69,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.linkNav{
+    display: flex;
+    flex-wrap: nowrap;
 }
