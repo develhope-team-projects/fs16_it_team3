@@ -11,6 +11,8 @@ const Product = ({
   brand,
   color,
   category,
+  cart,
+  setCart,
 }) => {
   return (
     <div>
@@ -24,6 +26,9 @@ const Product = ({
           brand={brand}
           color={color}
           category={category}
+          cart={cart}
+          setCart={setCart}
+          id={id}
         />
       </Link>
     </div>

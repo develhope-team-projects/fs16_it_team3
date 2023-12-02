@@ -7,7 +7,7 @@ import MarcheDonna from "../marche/MarcheDonna";
 import Product from "../Product";
 
 
-function Donna() {
+function Donna({cart, setCart}) {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
 
@@ -45,6 +45,8 @@ function Donna() {
         brand={product.brand}
         color={product.color}
         category={product.category}
+        cart={cart}
+        setCart={setCart}
       />
     ));
   }

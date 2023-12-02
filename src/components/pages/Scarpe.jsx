@@ -5,7 +5,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import GenderScarpe from "../marche/GenderScarpe";
 import Product from "../Product";
 
-function Scarpe() {
+function Scarpe({ cart, setCart }) {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleChange = (event) => {
@@ -42,6 +42,8 @@ function Scarpe() {
         brand={product.brand}
         color={product.color}
         category={product.category}
+        cart={cart}
+        setCart={setCart}
       />
     ));
   }

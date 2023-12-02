@@ -6,7 +6,7 @@ import SidebarUomo from "../Sidebar/SidebarUomo";
 import MarcheUomo from "../marche/MarcheUomo";
 import Product from "../Product";
 
-function Uomo() {
+function Uomo({ cart, setCart }) {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
 
@@ -45,6 +45,8 @@ function Uomo() {
         brand={product.brand}
         color={product.color}
         category={product.category}
+        cart={cart}
+        setCart={setCart}
       />
     ));
   }
