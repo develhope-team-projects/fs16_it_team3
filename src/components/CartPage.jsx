@@ -30,7 +30,7 @@ export function CartPage({cart, setCart}) {
                         <div className="cart-info">
                             <p>{item.title}</p>
                             <p className="old-price">{item.prevPrice}</p>
-                            <p className="new-price">{item.price}€({item.quantity*parseFloat(item.price.replace(',', '.'))}€)</p>
+                            <p className="new-price">{item.price}€({(item.quantity*parseFloat(item.price.replace(',', '.'))).toFixed(2)}€)</p>
                             <div className="quantity">
                                 <select
                                     id={item.id}
