@@ -20,7 +20,9 @@ export function CartPage({cart, setCart}) {
     };
     return (
         <div>
-            
+            <div className="cart-empty">
+                {cart.length === 0 && <h1>Il carrello è vuoto</h1>}
+            </div>
             <div className="cart-container">
                 
                 <div className="cart-elements">
@@ -49,15 +51,16 @@ export function CartPage({cart, setCart}) {
                             ))}
                 </div>
             
-                <div className="cart-checkout">
-                    
-                    <div >Totale: <div className="old-price">{cart.reduce((acc, item) => acc + parseFloat(item.prevPrice.replace(/[^\d.-]/g, ''))  * item.quantity, 0)}€</div> {cart.reduce((acc, item) => acc + parseFloat(item.price.replace(',', '.')) * item.quantity, 0).toFixed(2)}€</div>
-                    <button>Acquista</button>
-
-                    <p>
-                        
-                    </p>
+            {cart.length > 0 ? (
+            <div className="cart-checkout">
+                <div>
+                    Totale: <div className="old-price">{cart.reduce((acc, item) => acc + parseFloat(item.prevPrice.replace(/[^\d.-]/g, '')) * item.quantity, 0)}€</div>{" "}
+                    {cart.reduce((acc, item) => acc + parseFloat(item.price.replace(',', '.')) * item.quantity, 0).toFixed(2)}€
                 </div>
+                <button>Acquista</button>
+                <p></p>
+                </div>
+                ) : null}
             </div>
       
         </div>

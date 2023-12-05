@@ -77,3 +77,9 @@
   .delete:hover{
     fill: red;
   }
+
+  .cart-empty{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 170px;
+  }
