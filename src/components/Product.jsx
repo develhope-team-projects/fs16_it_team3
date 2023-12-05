@@ -14,6 +14,9 @@ const Product = ({
   cart,
   setCart,
 }) => {
+
+  
+
   return (
     <div>
       <Link to={`/product/${id}`}>

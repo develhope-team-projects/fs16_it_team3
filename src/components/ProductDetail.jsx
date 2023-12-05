@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/ProductDetail.css";
 import { useParams } from "react-router-dom";
 import products from "./db/completo";
+import AddToCartMessage from "./AddToCartMessage";
 
-const ProductDetail = () => {
+const ProductDetail = ({cart, setCart}) => {
+  const [message, setMessage] = useState(false);
+  function addToCart(event) {
+    console.log(cart)
+    event.preventDefault();
+   
+    setMessage(true);
+    
+    
+    setTimeout(() => {
+      setMessage(false);
+    }, 1000);
+     
+    const existingItemIndex = cart.findIndex(item => item.id === event.target.dataset.id);
+
+    if (existingItemIndex !== -1) {
+        const updatedCart = cart.map((item, index) => {
+            if (index === existingItemIndex) {
+                return { ...item, quantity: item.quantity + 1 };
+            }
+            return item;
+        });
+
+        setCart(updatedCart);
+    } else {
+        setCart([...cart, { id: event.target.dataset.id, title: event.target.name, img: event.target.dataset.img, prevPrice: event.target.dataset.prevprice,  price: event.target.dataset.price, quantity: 1 }]);
+    }
+}
+
   const { id } = useParams();
 
   const product = products.find((product) => product.id === parseInt(id));
@@ -17,6 +46,7 @@ const ProductDetail = () => {
   }
   return (
     <div>
+      {message && <AddToCartMessage />}
       <div className="productdisplay">
         <div className="productdisplay-left">
           <div className="productdisplay-img-list">
@@ -57,10 +87,14 @@ const ProductDetail = () => {
               <div>XXL</div>
             </div>
           </div>
-          <button
-            onClick={() => {
-              product.id;
-            }}
+          <button 
+            
+            data-id={product.id}
+            name={product.title}
+            data-img={product.img}
+            data-prevprice={product.prevPrice}
+            data-price={product.newPrice}
+            onClick={addToCart}
           >
             Aggiungi al carrello
           </button>

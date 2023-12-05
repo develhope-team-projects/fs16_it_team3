@@ -45,10 +45,10 @@ const App = () => {
           <Route path='/donna' element={<Donna cart={cart} setCart={setCart} />}></Route>
           <Route path='/scarpe' element={<Scarpe cart={cart} setCart={setCart} />}></Route>
           <Route path='/carrello' element={<CartPage cart={cart} setCart={setCart} />}></Route>
-          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/product/:id" element={<ProductDetail cart={cart} setCart={setCart} />} />
       </Routes>
       <footer>
-        <Footer />
+        
       </footer>
     </>
   );
