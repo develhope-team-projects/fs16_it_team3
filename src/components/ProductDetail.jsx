@@ -7,7 +7,7 @@ import AddToCartMessage from "./AddToCartMessage";
 const ProductDetail = ({cart, setCart}) => {
   const [message, setMessage] = useState(false);
   function addToCart(event) {
-    console.log(cart)
+    
     event.preventDefault();
    
     setMessage(true);

@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 const Card = ({ img, title, prevPrice, newPrice, cart, setCart, id}) => {
   const [message, setMessage] = useState(false);
   function addToCart(event) {
-    console.log(cart)
+    
     event.preventDefault();
    
     setMessage(true);
