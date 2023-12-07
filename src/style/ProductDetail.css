@@ -86,3 +86,14 @@
 .productdisplay-right-category span{
     font-weight: 600;
 }
+
+button.taglieBottone {
+    background-color: #ebebeb;
+    color: black;
+    padding: 1rem;
+    width: auto;
+}
+
+button.taglieBottone:focus {
+    border: 1px solid #ff4141;
+}

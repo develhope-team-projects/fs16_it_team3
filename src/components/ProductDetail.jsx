@@ -79,12 +79,12 @@ const ProductDetail = ({cart, setCart}) => {
           <div className="productdisplay-right-size">
             <h1>Seleziona taglia</h1>
             <div className="productdisplay-right-sizes">
-              <div>XS</div>
-              <div>S</div>
-              <div>M</div>
-              <div>L</div>
-              <div>XL</div>
-              <div>XXL</div>
+              <button className="taglieBottone">XS</button>
+              <button className="taglieBottone">S</button>
+              <button className="taglieBottone">M</button>
+              <button className="taglieBottone">L</button>
+              <button className="taglieBottone">XL</button>
+              <button className="taglieBottone">XXL</button>
             </div>
           </div>
           <button 
