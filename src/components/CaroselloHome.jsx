@@ -2,12 +2,21 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/Carosello.css";
 import Logo from "../assets/Logo3.png";
+import img1 from "../assets/img-carosello/product_6.png"
+import img2 from "../assets/img-carosello/product_20.png"
+import img3 from "../assets/img-carosello/product_25.png"
+import img4 from "../assets/img-carosello/product_36.png"
+import img5 from "../assets/img-carosello/product_53.png"
+import img6 from "../assets/img-carosello/product_70.png"
+import img7 from "../assets/img-carosello/product_37.png"
+import img8 from "../assets/img-carosello/product_48.png"
+import img9 from "../assets/img-carosello/product_90.png"
 
 export const CaroselloHome = () => {
   return (
     <>
       <Carousel data-bs-theme="dark">
-        <Carousel.Item interval={3000}>
+        <Carousel.Item interval={10000}>
           <div
             style={{
               display: "flex",
@@ -18,14 +27,14 @@ export const CaroselloHome = () => {
               marginLeft: "-125px",
             }}
           >
-            <a href="www.facebook.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
+            <a href="/product/6" className="caroselloCard">
+              <img src={img1} style={{ borderRadius:"10px", maxHeight:"256px" }} />
             </a>
-            <a href="www.instagram.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
+            <a href="/product/36" className="caroselloCard">
+              <img src={img4} style={{ borderRadius:"10px", maxHeight:"256px" }} />
             </a>
-            <a href="www.ciao.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
+            <a href="/product/90" className="caroselloCard">
+              <img src={img9} style={{ borderRadius:"10px", maxHeight:"256px" }} />
             </a>
           </div>
           <Carousel.Caption>
@@ -47,14 +56,14 @@ export const CaroselloHome = () => {
               marginLeft: "-125px",
             }}
           >
-            <a href="www.facebook.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
+            <a href="/product/53" className="caroselloCard">
+              <img src={img5} style={{ borderRadius:"10px", maxHeight:"256px" }} />
             </a>
-            <a href="www.instagram.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
+            <a href="/product/20" className="caroselloCard">
+              <img src={img2} style={{ borderRadius:"10px", maxHeight:"256px" }} />
             </a>
-            <a href="www.ciao.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
+            <a href="/product/48" className="caroselloCard">
+              <img src={img8} style={{ borderRadius:"10px", maxHeight:"256px" }} />
             </a>
           </div>
           <Carousel.Caption>
@@ -76,14 +85,14 @@ export const CaroselloHome = () => {
               marginLeft: "-125px",
             }}
           >
-            <a href="www.facebook.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
+            <a href="/product/25" className="caroselloCard">
+              <img src={img3} style={{ borderRadius:"10px", maxHeight:"256px" }} />
             </a>
-            <a href="www.instagram.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
+            <a href="/product/70" className="caroselloCard">
+              <img src={img6} style={{ borderRadius:"10px", maxHeight:"256px" }} />
             </a>
-            <a href="www.ciao.com" className="caroselloCard">
-              <img src={Logo} style={{ width: "256px" }} />
+            <a href="/product/37" className="caroselloCard">
+              <img src={img7} style={{ borderRadius:"10px", maxHeight:"256px" }} />
             </a>
           </div>
           <Carousel.Caption>
