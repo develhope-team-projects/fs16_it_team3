@@ -1,0 +1,16 @@
+.caroselloCard {
+    transition: all .2s ease;
+}
+
+.caroselloCard:hover {
+    transform: translateY(-10px);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+.carousel-indicators {
+    bottom: -1rem;
+}

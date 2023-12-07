@@ -1,0 +1,79 @@
+
+
+.cart-container{
+    margin-top: 140px;
+   margin-left: 7rem;
+   margin-right: 7rem;
+   margin-bottom: 100px;
+
+    display: flex;
+    justify-content:space-between;
+}
+
+.cart-elements{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item{
+    display: flex;
+    gap: 20px;
+}
+.cart-checkout{
+    font-size: 40px;
+    position:relative;
+    
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.old-price{
+    text-decoration: line-through;
+}
+.cart-img{
+    align-self: center;
+    justify-self: center; 
+    max-width: 130px; 
+    height: auto;
+}
+.cart-info{
+    align-self: center;
+    justify-self: center; 
+}
+.quantity{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.cart-checkout button{
+    display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-color: #4caf50; 
+  color: #ffffff; 
+}
+
+.cart-checkout button:hover {
+    background-color: #45a049; /* Darker Green on hover */
+  }
+  
+  
+  .cart-checkout button:active {
+    background-color: #3e8746; /* Even Darker Green on click */
+  }
+
+  .delete:hover{
+    fill: red;
+  }

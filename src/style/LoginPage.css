@@ -1,0 +1,40 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: openfont;
+  src: url(../assets/Open.ttf);
+}
+
+.myfont {
+  font-family: "openfont";
+}
+
+.input-form{
+  width: 100%;
+  padding: .75rem 1.25rem ;
+}
+
+.recovery-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recovery-box a {
+  margin: 0;
+  text-align: center;
+}
+
+.info-link-login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.info-link-login a {
+  margin: 0;
+  text-align: center;
+}

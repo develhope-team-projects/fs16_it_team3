@@ -1,0 +1,188 @@
+footer{
+ font-family: sans-serif !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container-footer {
+    display: flex;
+    background-color: #444444;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom:2px solid white ;
+}
+
+.aiuto-footer h3 {
+    color: white;
+    
+}
+
+.aiuto-footer a {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.aiuto-footer a:hover {
+    transform: scale(1.1);
+}
+
+.buoni-footer h3 {
+    color: white;
+   
+}
+
+.buoni-footer a {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.buoni-footer a:hover {
+    transform: scale(1.1);
+}
+
+.spedizioni-footer {
+    color: white;
+}
+
+.pagamento-footer {
+    color: white;
+
+}
+
+.svg-pagamenti {
+    display: flex;
+    
+    padding: 0px;
+    gap: 5px;
+}
+
+.svg-pagamenti img{
+    width: 60px;
+}
+
+.svg-spedizioni{
+    display: flex;
+
+    padding: 0px;
+    gap: 5px;
+}
+
+.bartolini-footer {
+    width: 60px;
+    padding: 0px;
+}
+
+.dhl-footer {
+    width: 60px;
+    padding: 0px;
+}
+
+.sda-footer {
+    width: 60px;
+    padding: 0px;
+}
+
+.container-footer2 {
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.applicazioni-footer2 {
+    display: flex;
+    padding: 0px;
+    gap: 30px;
+   
+}
+
+.applicazioni-footer2 img {
+    width: 150px;
+    cursor: pointer;
+    
+}
+
+.generali-footer2 {
+    display: flex;
+
+    gap: 20px;
+}
+
+.primo-generali,
+.secondo-generali {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cvg-footer {
+    text-decoration: none;
+    color: white;
+}
+
+.informazioni-footer {
+    text-decoration: none;
+    color: white;
+}
+
+.informativa-footer {
+    text-decoration: none;
+    color: white;
+}
+
+.diritto-footer {
+    text-decoration: none;
+    color: white;
+}
+
+.tech-footer {
+    text-decoration: none;
+    color: white;
+}
+
+.impostazioni-footer {
+    text-decoration: none;
+    color: white;
+}
+
+.trovaci-footer2 {
+    color: white;
+}
+
+.svg-social{
+    display: flex;
+    gap: 3px;
+}
+
+.flogo {
+    width: 40px;
+    cursor: pointer;
+}
+
+.inlogo {
+    width: 40px;
+    cursor: pointer;
+}
+
+.twlogo {
+    width: 40px;
+    cursor: pointer;
+}
+
+.pilogo {
+    width: 40px;
+    cursor: pointer;
+}

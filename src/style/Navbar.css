@@ -1,0 +1,76 @@
+@import url(./root.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbarContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.navbarwrapper {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    
+}
+
+.navbarComponent {
+    background-color: #000000;
+    width: 90%;
+    height: 97px;
+    border-bottom: 3px solid var(--clr-white);
+    border-left: 3px solid var(--clr-white);
+    border-right: 3px solid var(--clr-white);
+    border-radius: 0 0 40px 40px;
+    position: fixed;
+    z-index: 100;
+}
+
+.logoNav {
+    width: 90px;
+    margin-top: 4px;
+}
+
+.CartNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.userBtnNav {
+    display: flex;
+    align-items: center;
+    
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    overflow: hidden;
+    transition-duration: .1s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(0, 0, 0);
+    margin-right: 30px;
+}
+
+.userBtnNav:hover {
+    border: 2.5px solid white;
+}
+
+.sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkNav{
+    display: flex;
+    flex-wrap: nowrap;
+}

@@ -1,0 +1,28 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 20rem;
+  margin-bottom: 220px;
+}
+
+.card {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.card:hover .card {
+  transform: scale(1.05);
+  transition: 0.6s;
+}
+
+h3 {
+  transition: ease-in-out 0.4s;
+}
+
+.card:hover h3 {
+  color: goldenrod;
+}
+
+.card-img {
+  max-width: 100%;
+}
